@@ -5,6 +5,9 @@ if (!function_exists('__autoload')){
 			case 'IsMobile':
 				require_once('ismobile.class.php');
 				break;
+			case 'IsMobileTest':
+				require_once('ismobiletest.php');
+				break;
 			default:
 				$path = explode('_',$classname);
 				$pathStr = implode(DIRECTORY_SEPARATOR, $path);
